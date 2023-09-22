@@ -26,3 +26,6 @@ xr_test = xr_test.assign_coords({"date_sin": np.sin(days_of_year_in_pi(xr_test.d
                         "date_cos": np.cos(days_of_year_in_pi(xr_test.datetime.data)),
                         "time_sin": np.sin(minutes_of_day_in_pi(xr_test.datetime.data)),
                         "time_cos": np.cos(minutes_of_day_in_pi(xr_test.datetime.data))}).copy()
+
+xr_train.to_netcdf(path+'xr_train_timestamped.netcdf')
+xr_test.to_netcdf(path+'xr_test_timestamped.netcdf')
