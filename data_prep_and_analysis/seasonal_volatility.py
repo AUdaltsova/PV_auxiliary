@@ -1,5 +1,3 @@
-# Seasonal volatility
-
 xr_train = xr.open_dataset(path+'xr_train_timestamped.netcdf')
 xr_test = xr.open_dataset(path+'xr_test_timestamped.netcdf')
 
